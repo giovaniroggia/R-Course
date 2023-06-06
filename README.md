@@ -42,7 +42,8 @@ Caso tenham mais dicas sobre o uso do GitHub, podemos criar uma seção neste ar
 
 ### Unidade 3 - Manipular e visualizar dados
 
-- Modificando variàveis (`mutate`, `ifelse`, `case_when`)  
+- Modificando variàveis (`mutate`, `ifelse`, `case_when`)
+- Criação de subsets (excluir colunas, excluir observacoes, reshape (wide & long)) 
 - Gráficos (`plot`, `ggplot`)
 - Correlação e testes (`cor`, `lm`, `glm`)
 
