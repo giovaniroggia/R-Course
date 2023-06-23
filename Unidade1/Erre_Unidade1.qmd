@@ -1,0 +1,432 @@
+---
+title: "Curso Érre: Unidade 1"
+subtitle: "Porque somos umanos"
+author: Equipe WVS Brasil
+title-slide-attributes:
+    data-background-image: img/slide_coverqt.png
+    data-background-size: contain
+    data-background-position: top
+date: June 2023
+date-format: "MMMM YYYY"
+from: markdown+emoji
+format: 
+  revealjs:
+    theme: slides.scss
+    incremental: true
+    logo: img/logo_geary.png
+    transition: fade
+    mouse-wheel: true    
+    background-transition: fade
+    controls: true
+    chalkboard: true
+    highlight-style: github
+editor: 
+  markdown: 
+    wrap: sentence
+execute: 
+  eval: true
+  echo: true
+---
+
+# Introdução
+
+## Caminhos
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+![](img/ab_shortest.png)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+![](img/ab_interesting.png)
+:::
+:::
+
+:::aside
+Illustration from [IllustraTom](http://illustratom.com/wp-content/uploads/2012/08/Illustratom2Large_081.jpg)
+:::
+
+## {background-image="./img/noidea.gif" background-size="70%"}
+
+## {background-image="./img/practice.gif" background-size="70%"}
+
+
+## {background-image="./img/freire.jpg" background-size="100%"}
+
+:::aside
+Image by [Reporter Brasil](https://reporterbrasil.org.br/2019/03/criticada-pelo-governo-metodologia-paulo-freire-revolucionou-povoado-no-sertao/)
+:::
+
+## Encontros {background-image="./img/path.png" background-position="right" background-size="25%"}
+
+- 14h as 17h
+- Hoje: Unidade 1 e Unidade 2
+- Amanhã: Unidade 3
+- 30 Jun: Unidade 4
+
+
+## Unidade 1 - Intro ao R e IDE (RStudio)
+
+- O que é o curso?  
+- Conhecendo os instrutores e participantes    
+- Instalando R e RStudio  
+- Instalando pacotes  
+- Gerando um relatório de análise de dados  
+
+## Unidade 2 - Importar e analisar dados 
+
+- Lógica de programação  
+- Importando bases de dados (`read.csv`, `haven::read_sav`, `xlsx`)  
+- Visualizando a base de dados e metadados (`view`, `head`, `names`, `attributes`)  
+- Estatística descritiva (`sum`, `count`, `mean`, `summarise`)   
+- Ponderação em surveys (`weighted.mean`)  
+
+## Unidade 3 - Manipular e visualizar dados
+
+- Modificando variàveis (`mutate`, `ifelse`, `case_when`)
+- Criação de subsets (excluir colunas, excluir observacoes, reshape (wide & long)) 
+- Gráficos (`plot`, `ggplot`)
+- Correlação e testes (`cor`, `lm`, `glm`)
+
+## Unidade 4 - Extras 
+
+- Criando funções 
+- Acesso a APIs e webscrapping 
+- Análise de dados textuais  
+- Criando relatórios com RMarkdown e Quarto
+
+
+## Muito rápido?
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+![](img/confused.gif)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+- Use o chat ("Repete!", "Vai devagar aí!")     
+  
+- Faça perguntas  
+
+- Faça amigos  
+:::
+:::
+
+
+## Muito devagar?
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+![](img/easy.gif)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+- Explore o exercício um pouco mais  
+
+- Ajuda o amiguinho  
+
+:::
+:::
+
+# Érre
+
+## O que é o Érre?
+
+<br>
+>  a language and environment for statistical computing and graphics[^1]
+
+- *Language*: set of instructions  
+- *Software*: environment 
+
+[^1]: R-project.org - [About R](https://www.r-project.org/about.html)
+
+## Lógica
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+function (object)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+do_something (to_something)
+:::
+:::
+
+
+## Diferença do SPSS
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+
+**SPSS**
+
+![](img/spss.jpg)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+
+**Érre**
+
+read_sav ("mydata.sav")  
+count (gender)  
+:::
+:::
+
+## Por que o Érre?
+
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+
+**Free**
+
+*(as in 'Freedom')*
+:::
+
+::: {.column width="50%" style="text-align: center"}
+
+![](img/source.gif)
+:::
+:::
+
+
+## Por que o Érre?
+
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+
+**Free**
+
+*(as in free pizza)*
+:::
+
+::: {.column width="50%" style="text-align: center"}
+
+![](img/pizza.gif)
+:::
+:::
+
+
+## Por que o Érre?
+
+<br>
+> Your primary collaborator is yourself six months from now, and your past self doesn't answer emails. 
+
+
+## {background-image="./img/indeed.png" background-size="60%"}
+
+:::aside
+Figure prepare by [Jeff Hale](
+https://towardsdatascience.com/the-most-in-demand-tech-skills-for-data-scientists-d716d10c191d)
+:::
+
+
+# Aprendendo
+
+## Swirl {background-image="./img/swirl.png" background-size="40%"}
+
+
+## Copia e cola
+
+
+- GitHub: [https://github.com/](https://github.com/)  
+  
+- Stack Overflow: [https://stackoverflow.com/](https://stackoverflow.com/)
+
+- ChatGPT and Codey 
+
+
+# RStudio
+
+## R and RStudio {background-image="./img/rrstudio.png" background-size="60%"}
+
+
+## RStudio cloud {background-image="./img/rcloud_save.png" background-size="60%"}
+
+## RStudio local {background-image="./img/rfiles.png" background-size="60%"}
+
+
+## Rstudio interface {background-image="./img/rstudio.png" background-size="60%"}
+
+## Rstudio interface 
+
+- *Source code* - notepad for your code;  
+- *Environment* - the datasets/objects;  
+- *Files/Viewer* - your folders and files. Also shows charts/outputs;  
+- *Console* - output, you can also type your code here.  
+
+## Rstudio interface - kitchen {background-image="./img/interface_kitchen.png" background-size="60%"}
+
+# Operações básicas
+
+## Basic operations - calculator
+
+R is a calculator  
+
+```{r}
+1 + 1
+```
+
+
+## Basic operations - calculator
+
+A calculator with memory  
+
+The operator <- (assignment) saves what is on the right side as an **object** with the name given on the left side
+
+
+```{r eval=FALSE}
+my_result <-  1 + 1
+
+```
+
+
+## Basic operations - objects
+
+You can also save any text (character)
+```{r}
+my_text <-  "bla bla bla"
+```
+
+<br>
+
+Types (classes) of objects:  
+- Numeric (1, 7, 3/7)  
+- Character ("A", "any word", "%", " ")
+
+
+## Basic operations - objects
+
+function (object)
+
+
+```{r eval=FALSE}
+sum(1,1)
+```
+
+<br>
+
+c() is a function to "combine" the object
+
+```{r eval=FALSE}
+my_combination <- c(4, 10, 10, 15)
+```
+
+
+## Basic operations - objects
+
+```{r eval=FALSE}
+my_result * 3
+
+my_result * my_combination
+
+```
+
+## Writing in R - comments
+
+
+```{r eval=FALSE}
+#Here I perform a complex calculation 
+# and save as an object called "my result"
+my_result <-  1 + 1
+
+# Here I multiply my result and a sequence 
+# of numbers that I created
+my_result * my_combination
+```
+
+
+## Handy shortcuts - TAB
+
+
+Tab is one of your best friends =)
+
+```{r eval=FALSE}
+my...
+```
+
+
+## Basic functions - commands
+
+R has several built-in functions for data analysis
+
+```{r eval=FALSE}
+mean(my_combination) #mean value
+max(my_combination) #maximum value
+min(my_combination) #minimum value
+table(my_combination) #frequency table
+```
+
+
+## Basic functions - help
+
+```{r eval=FALSE}
+?mean
+```
+
+<br>
+
+Functions usually accept additional arguments: 
+`na.rm == TRUE` 
+
+
+## Hands on  
+
+
+1) Crie um objeto chamado 'ano_nascimento' contendo o ano de nascimento de tres pessoas que vc conhece
+
+2) Calcule a idade delas e salve como um objeto chamado 'idade'
+
+3) Calcule a média dos valores de idade, encontre o mais novo e o mais velho ![](img/diff_easy.png)
+
+
+# Pacotes
+
+## How to understand things?
+
+1900 - "There is a book for that"  
+
+2005 - "There is a website for that"  
+
+2010 - "There is an app for that"  
+
+2015 - "There is a meme for that"  
+
+2023 - "There is an **R package** for that"  
+
+## Apps {background-image="./img/apps.jpg" background-size="60%"}
+
+## CRAN {background-image="./img/cran.png" background-size="60%"}
+
+
+## R packages
+
+::: columns
+::: {.column width="50%" style="text-align: center"}
+
+**Wes Andersen** 
+
+![](img/wesandersen.png)
+:::
+
+::: {.column width="50%" style="text-align: center"}
+
+**Rtweet**
+
+![](img/rtweet.png)
+:::
+:::
+
+## tidyverse
+
+```{r eval=FALSE}
+install.packages("tidyverse")
+```
+
+```{r warning=FALSE, results=FALSE, message=FALSE}
+library(tidyverse)
+```
+
+## The end
+
